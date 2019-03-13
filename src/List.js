@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import App from './App.js'
 
+
 class List extends Component {
+
     render() {
         console.log(this.props.namesList);
         let names = this.props.namesList.map((name, index) => {
@@ -11,13 +13,16 @@ class List extends Component {
                 <li key={index}>{name}</li>
             )
         })
+
+
         return (
-            <div>
+            <div class = "card" >
                 <h1>List of Names</h1>
                 <ul>
-                    {names}
+                    <h2>{names}</h2>
                 </ul>
-           </div>
+                <input type="submit" value="Clear List"  onClick={this.props.clearList} />
+            </div>
         );
     }
 }

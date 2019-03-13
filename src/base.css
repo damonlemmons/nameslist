@@ -1,0 +1,40 @@
+body {
+  margin: 50px;
+  padding: 50px;
+  font-family: sans-serif;
+  background-color: blue;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30vw 1fr 15vw;
+    grid-gap: 5px;
+}
+
+.card {
+    display:flex;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: grey;
+    min-height: 200px;
+    width: 200px;
+}
+
+ul, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#button {
+    width: 100px;
+
+}
+
+#textbox {
+    height: 50px;
+
+}
